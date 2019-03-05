@@ -1,0 +1,61 @@
+/*class pakai '.titik'
+/*id pakai '#hashtag'*/
+
+
+/*class*/
+.b {
+    font-weight: bold ;
+    
+}
+
+
+.tst1 {
+    font-style: italic ;
+}
+
+.c {
+    background-color: #ff9999 ;
+    border-left: 6px solid #993333 
+}
+
+/*id*/
+#a1 {
+    background-color: brown;
+    color: azure;
+}
+
+#a2 {
+    font-size: 200%;
+}
+
+#menu {
+    font-size: 15px;
+
+}
+
+a:visited [href^="prj1.3"]{
+    color : springgreen;
+
+}
+
+a:hover, 
+a:active, 
+a:focus [href^="prej1.3"]{
+    color: darkred;
+    /* text-decoration: none; */ 
+}
+
+/* ditambah newtab, atribut yg dicari gk perlu petik */
+[href$=html]::after {
+    content: ' (newtab)';
+}
+
+
+/*  '*' apapun itu
+
+* {
+    color: blue;
+}
+
+*/
+

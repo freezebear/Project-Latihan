@@ -1,0 +1,42 @@
+/*atribut, spesifik
+[attr="isi"] = yg 'isi' saja
+[attr~="isi"] = ^sama tpi jika terpisah dengan 1 spasi
+[attr^="isi"] = yg diawali kata 'isi'
+[attr$="isi"] = yg diakhiri kata 'isi
+[attr*="isi"] = yg ada kata 'isi' termasuk kata 'berisi'
+[attr*="isi" i] = 'i' =>incase-sensitive
+[attr*="isi" s] = 's' => case-sensitive //unused
+*/
+
+[data-sayur] {
+    color: greenyellow;
+}
+
+[data-daging] {
+    color: brown;
+
+}
+
+[data-sayur="cair"] {
+    background-color: goldenrod;
+}
+
+[data-sayur~="penyedap"] {
+    background-color: orange;
+}
+
+a {
+    color: silver;
+}
+
+a[href^="#"] {
+    background-color: red;
+}
+
+a[href$=".org"] {
+    background-color: black;
+}
+
+a[href*="example" i] {
+    color: skyblue;
+}

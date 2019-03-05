@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>HTML Include JS</title>
+        <body> <center>
+            <!-- css internal-->
+            <style> 
+            #a {
+                color: blue;
+                font-size: 30px;
+                
+            }
+            </style>
+
+            <div id="a"></div>
+
+
+
+            <script>
+            //variable / var bisa pakai $ ataw _
+            var txt = 'teesss' ;
+            var a1 = 100;
+            var a2 = 200;
+            var a3 = 1.79942;
+
+            //angka++;  //increment, gk bisa di bawah hasil
+
+            var h1 = a1 + a2;  //hasil hanya mengupdate yg terbaru/paling bawah
+
+            //a2 = a2 + a1; |long type
+            //a2 += a1;   |short type
+
+            //metode number 
+            var h2 = a3.toFixed(3);
+            /*
+            var h2 = a1.toString() + a2;
+            var h2 = Math.random();
+            var h2 = Math.min(a1, a2);
+            var h2 = Math.max(a1, a2);
+            */
+           
+            var h3 = Math.round(a3); //bulat terdekat
+            /*
+            var h3 = Math.ceil(a3); //bulat ke atas 
+            var h3 = Math.floor(a3); //bulat ke bawah
+            */
+            
+            //RNG
+            var x = 10; //jarak angka (sampai angka sekian)
+            var y = 1; //angka minimal (paling bawah)
+            var h3 = Math.floor( Math.random() * x) + y;
+
+            //output script     
+                document.getElementById("a").innerHTML = h3 ;
+                
+            
+
+
+            </script>
+            </center>
+        </body>
+    </head>
+</html>
