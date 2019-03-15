@@ -1,0 +1,19 @@
+dl {
+    color: fuchsia;
+}
+
+dd{
+    color: red;
+}
+
+.VYT1 a {  /*mengikuti warna parent/terbaru/terbawah*/
+    color: inherit;
+}
+
+.VYT2 a { /*warna tetap?*/
+    color: initial;
+}
+
+.VYT3 a { /*ikut walau sudah ada??*/
+    color: unset;
+}

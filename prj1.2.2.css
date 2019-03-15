@@ -1,0 +1,74 @@
+
+
+/* Basic table setup */
+table {
+    font: 1em sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /*'td'nya dan 'th'nya table*/   
+  table td, table th {
+    border: 1px solid black;
+    padding: 0.5em 0.5em 0.4em;
+  }
+  
+  /*'th'nya 'thead' di table */
+  table thead th {
+    color: white;
+    background: black;
+  }
+  
+  /*semua 'td' dengan 'td' yg lain di 'tbody' di dalam 'table'*/
+  table tbody td + td {
+    text-align: center;
+  }
+  
+  /*semua 'td' yg terakhir di 'tbody' di dalam 'table'*/
+  table tbody td:last-child {
+    text-align: right;
+  }
+  
+  /*'th'nya 'tfoot' di table */
+  table tfoot th {
+    text-align: right;
+    border-top-width: 5px;
+    border-left: none;
+    border-bottom: none;
+  }
+  
+  /* semua 'td'nya 'th' di table */
+  table th + td {
+    text-align: right;
+    border-top-width: 5px;
+    color: white;
+    background: black;
+  }
+  
+  /* All pseudo-elements "before" <td>s that are a last child,
+     appearing within elements with a class of "with-currency" that
+     also have an attribute "lang" with the value "en-US" 
+     
+     class dengan atribut en-US diisi dengan content di td:terakhir::sebelum(awal)element */
+
+  .with-currency[lang="en-US"] td:last-child::before {
+    content: '$';
+  }
+  
+  .with-currency[lang="id"] td:last-child::before {
+    content: 'Rp.';
+  }
+  
+
+  /* All pseudo-elements "after" <td>s that are a last child,
+     appearing within elements with the class "with-currency" that
+     also have an attribute "lang" with the value "fr" 
+     
+     class dengan atribut fr diisi dengan content di td:terakhir::setelah(akhir)element */
+  .with-currency[lang="fr"] td:last-child::after {
+    content: ' €';
+  }
+
+  .with-currency[lang="id"] td:last-child::after {
+    content: 'k';
+  }

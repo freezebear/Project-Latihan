@@ -1,0 +1,13 @@
+#gmbr {
+    background: red;
+    border: 0.5px solid blue;
+    width: 7em;
+    height: 3em;
+    text-align: center;
+    transform: rotate(30deg);
+}
+
+h2 {
+    text-align: center;
+    
+}

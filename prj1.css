@@ -1,6 +1,10 @@
-/*class pakai '.titik'
-/*id pakai '#hashtag'*/
-
+/*  
+    class pakai '.titik'  
+    id pakai '#hashtag' harus pake stylesheet. 
+    id lebih unggul daripada class tpi kalah dengan !important yg juga kalah dengan style di html
+    urutan padding mulai dari kiri (arah jam)
+*/
+    
 
 /*class*/
 .b {
@@ -20,8 +24,10 @@
 
 /*id*/
 #a1 {
-    background-color: brown;
-    color: azure;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: cyan;
 }
 
 #a2 {

@@ -1,4 +1,5 @@
-/*atribut, spesifik
+/*
+atribut, spesifik
 [attr="isi"] = yg 'isi' saja
 [attr~="isi"] = ^sama tpi jika terpisah dengan 1 spasi
 [attr^="isi"] = yg diawali kata 'isi'
@@ -6,6 +7,33 @@
 [attr*="isi"] = yg ada kata 'isi' termasuk kata 'berisi'
 [attr*="isi" i] = 'i' =>incase-sensitive
 [attr*="isi" s] = 's' => case-sensitive //unused
+*/
+
+/*
+  common used units => em, px, %
+  unitless = 1px
+  1em = 16px 
+  1em = 100%
+*/
+
+/*
+types of color :
+keywords                       -> red blue yellow
+hexadecimals                    -> #ff0000 #0000ff
+RGB (red, green, blue)          -> rgb(255,0,0) rgb(255, 251, 0) 
+HSL (hue, saturation, lightness -> hsl(0-360,100%,100%) 
+RGBA / HSLA (transparency 0~1)  -> rgb(255,0,0,0~1) / hsl(0~360,100%,100%,0~1)
+
+transparency vs opacity         -> opacity 0~1;
+hanya background color vs keseluruhan
+*/
+
+/*
+transform: rotate(45deg); putar arah jarum jam
+transform: translate(50px, 60px); pindah
+width: calc(90% - 15px);  
+background-image: url('myimage.png'); 
+background-image: linear-gradient(to left, teal, aquamarine);
 */
 
 [data-sayur] {
@@ -40,3 +68,62 @@ a[href$=".org"] {
 a[href*="example" i] {
     color: skyblue;
 }
+
+p {
+    margin: 5px;  /* batas antar paragraph*/
+    padding: 10px; /* lebar huruf dengan border*/
+    border: 2px solid black;
+    background-color: yellow;
+    line-height: 1.5; /*tinggi text per line*/
+  }
+  
+/* 
+only from the top(?) need more research // cascade, urutan kodenya
+paling bawah = pertama ter apply
+*/
+
+
+  p:nth-child(1) {  
+    width: 150px;
+    font-size: 18px;
+  }
+  
+  p:nth-child(2) {
+    width: 250px;
+    font-size: 24px;
+  }
+  
+  p:nth-child(3) {
+    width: 350px;
+    font-size: 30px;
+  }
+
+  div .boxes {
+    margin: 10px;
+    font-size: 200%;
+    color: white;
+    height: 150px;
+    border: 2px solid black;
+  }
+  
+  .boxes:nth-child(1) {
+    background-color: red;
+    width: 650px;
+  }
+  
+  .boxes:nth-child(2) {
+    background-color: blue;
+    width: 75%;    
+  }
+
+  .outer {    
+    width: 100%;
+    height: 32px;
+    background-color: rgb(255, 37, 226);
+  }
+  
+  .inner {
+    width: 220px;
+    height: 2em;
+    background-color: rgb(255, 251, 0);
+  }
