@@ -216,7 +216,7 @@ select.onchange = function() {
     update('lime','purple');
     break;
     }
-   }
+   };
 
 /*ternary (true or false / only 2 choises)
 select.onchange = function() {
@@ -252,7 +252,7 @@ else if (pilih === 'April' || pilih === 'Juni' || pilih === 'September' || pilih
 
 
   createCalendar(hri, pilih);
-}
+};
 
 function createCalendar(hri, pilih) {
   tgl.innerHTML = '';

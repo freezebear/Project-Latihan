@@ -51,4 +51,4 @@
  but1.onclick = function() {
  var nem = prompt('nama?');    //promt = ask form
  alert('Hello ' + nem + ', nice to see you!');  //alert = note / notif
-}
+};
