@@ -91,6 +91,19 @@
             color: black;
         }
         
+        #print {
+            color: white;
+            text-align: right;
+            height: 100px;
+            width: 100%;
+        }
+        
+        #print:hover {
+            text-decoration: 1px dotted !important;
+            background: white;
+            color: black;
+        }
+        
         #me {
             position: fixed;
             left: 0;
