@@ -1,0 +1,93 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            background-color: rgb(218, 47, 112);
+            color: white;
+            font-family: Tahoma, sans-serif, Arial;
+            font-size: 14px;
+        }
+        
+        #jdl {
+            position: absolute;
+            top: 70px;
+            left: 130px;
+        }
+        /* menu kiri*/
+        
+        #menu_kiri {
+            position: absolute;
+            left: 30px;
+            top: 190px;
+            width: 150px;
+        }
+        
+        .menukotak {
+            margin: 0 0 10px 0;
+            border: 1px solid black;
+        }
+        
+        .menukotak h2 {
+            border-bottom: 1px solid black;
+        }
+        
+        h2 {
+            font-size: 16px;
+            display: block;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+        
+        .link a {
+            color: white;
+            text-decoration: none
+        }
+        
+        a:hover {
+            text-decoration: 1px dotted !important;
+        }
+        /*tengah*/
+        
+        .tengah {
+            position: absolute;
+            top: 170px;
+            left: 190px;
+            right: 30px;
+            margin: 0;
+            padding-bottom: 50px;
+        }
+        
+        .isi {
+            border: 1px solid black;
+            margin: 21px 0 -10px 0;
+            padding: 5px;
+        }
+        
+        .t19 {
+            display: none;
+        }
+        
+        .t20 {
+            display: none;
+        }
+        
+        .t21 {
+            display: none;
+        }
+        
+        #me {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            font-size: 10px;
+        }
+        
+        #tglskrng {
+            position: fixed;
+            top: 0;
+            right: 0;
+            font-size: 10px;
+        }

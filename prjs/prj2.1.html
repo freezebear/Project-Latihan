@@ -1,35 +1,94 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="prj2.1.css">
-    </head>
 
-    <body>
-            <p>Player 1: freezebear</p>
-            <!--Document Object Model (DOM) Application Programming Interface (API)-->
-            <!--Geolocation API-->
-            <!--Canvas and WebGL-->
-            <!--Audio Video / HTMLMediaElement and WebRTC-->
+<head>
+    <link rel="stylesheet" href="prj2.1.css">
+</head>
 
-            <!--<button onclick="createParagraph()">HONK~</button>-->
+<body>
+    <p>Player 1: freezebear</p>
+    <!--Document Object Model (DOM) Application Programming Interface (API)-->
+    <!--Geolocation API-->
+    <!--Canvas and WebGL-->
+    <!--Audio Video / HTMLMediaElement and WebRTC-->
 
-            <button class="ngeeng">HONK~</button>
+    <!--<button onclick="createParagraph()">HONK~</button>-->
 
-            <br>
-            <button class="buton1">Start</button>
-            <p class="mulai">Engine Start!</p>
+    <button class="ngeeng">HONK~</button>
 
-            <br>
+    <br>
+    <button class="buton1">Start</button>
+    <p class="mulai">Engine Start!</p>
 
-            <button class="helo">Hai~</button>
-            <br>
-            
+    <br>
 
-
+    <button class="helo">Hai~</button>
+    <br>
 
 
-        <script src="prj2.1.js" async>
+
+
+    <form id="form1" nama="form1" onsubmit="return false">
+        <label for="select1">Pilihan</label>
+        <select name="select1" id="select1">
+                          <option value="yuisis">Yuisis</option>
+                          <option value="caren">Caren</option>
+                          <option value="clarise">clarise</option>
+                       </select>
+        <input type="submit" value="Tampilkan" onclick="show()">
+
+    </form>
+    <p id="container"></p>
+
+    <!--
+    <form>
+        <div class='nativeDatePicker'>
+            <label for="month-visit">Pilih Tanggal : </label>
+            <input type="month" id="month-visit" name="month-visit">
+            <span class="validity"></span>
+
+        </div>
+
+        <p class="fallbackLabel">Pilih Tanggal : </p>
+        <div class="fallbackDatePicker">
+            <div>
+                <span>
+                <label for="month">Bulan : </label>
+                <select id="month" name="month">
+                    <option selected>Januari</option>
+                    <option>Februari</option>
+                    <option>Maret</option>
+                    <option>April</option>
+                    <option>Mei</option>
+                    <option>Juni</option>
+                    <option>Juli</option>
+                    <option>Agustus</option>
+                    <option>September</option>
+                    <option>Oktober</option>
+                    <option>November</option>
+                    <option>Desember</option>
+                </select>
+            </span>
+                <span>
+                <label for="year">Tahun : </label>
+                <select id="year" name="year">                            
+                </select>                    
+            </span>
+            </div>
+        </div>
+-->
+
+    <p>
+        <a class="toggle" href="#"> Tugel</a>
+    </p>
+
+    <div class="toggle-content" id="example"> isinya??</div>
+
+    <button onclick="fungsiTugel()">kliklik</button>
+    <div id="divTugel">SUMMON!!</div>
+
+    <script src="prj2.1.js" async>
         /*<script defer src="untuk scipt urut"> */
+    </script>
+</body>
 
-        </script>
-    </body>
 </html>

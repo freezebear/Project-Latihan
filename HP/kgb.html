@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="src/style.css">
+    <meta charset="UTF-8">
+    <title>HP Test</title>
+
+
+
+</head>
+
+<body>
+    <div id="jdl">
+        <h1>Electronic Monitoring and Notification Kenaikan Gaji Berkala</h1>
+    </div>
+    <!--menu kiri-->
+    <div id="menu_kiri">
+
+        <div class="menukotak">
+            <h2>Home</h2>
+            <div class="link">
+                <a href="Homepage.html">Beranda</a><br>
+                <a href="kgb.html">Monitor</a><br>
+                <a href="#">Coming soon..</a><br>
+                <a href="#">TBA</a><br>
+            </div>
+        </div>
+
+        <div class="menukotak">
+            <h2>User Menu</h2>
+            <div class="link">
+                <a href="#" class="in">Masuk</a><br>
+                <a href="#" class="regs">Daftar</a><br>
+                <a href="#" class="fgt">Lupa Password</a><br>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!--tengah-->
+    <div class="tengah">
+        <div class="isi">
+            <h1>Daftar Pegawai/Hakim</h1>
+
+            <label for="tahun"> Pilih Tahun : 
+                <select class="tahun" name="tahun">
+                    <option value="---">----</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+            </label>
+
+            <div>
+                <button class='but1' onclick="tampil()">Tampilkan</button>
+            </div>
+
+
+
+            <table class="t19" border='1' cellpadding="0" cellspacing="0" width="80%">
+                <tr>
+                    <th>NO</th>
+                    <th>NAMA</th>
+                    <th>NIP</th>
+                    <th>PANGKAT/GOL</th>
+                    <th>JABATAN</th>
+                    <th>TMT</th>
+                    <th>KGB YG AKAN DTG</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>DRS. H. SYAKHRANI</td>
+                    <td>196503101993031002</td>
+                    <td>IV/B</td>
+                    <td>KETUA</td>
+                    <td>
+                        <date datetime="2019-03">Maret 2019</date>
+                    </td>
+                    <td>
+                        <date datetime="2021-03">Maret 2021</date>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>M. ZAINURI</td>
+                    <td>197806191998031001</td>
+                    <td>III/B</td>
+                    <td>JURUSITA</td>
+                    <td>
+                        <date datetime="2019-03">Maret 2019</date>
+                    </td>
+                    <td>
+                        <date datetime="2021-03">Maret 2021</date>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>SYAIFUL ANNAS, SHI., M.Sy</td>
+                    <td>198511042009041003</td>
+                    <td>III/C</td>
+                    <td>HAKIM</td>
+                    <td>
+                        <date datetime="2019-04">April 2019</date>
+                    </td>
+                    <td>
+                        <date datetime="2021-04">April 2021</date>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>KHOMSIATUN MAISAROH, SH</td>
+                    <td>198305042009042011</td>
+                    <td>III/C</td>
+                    <td>PANITERA MUDA PERMOHONAN</td>
+                    <td>
+                        <date datetime="2019-04-18">April 2019</date>
+                    </td>
+                    <td>
+                        <date datetime="2021-04-18">April 2021</date>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>M. KHARIS RIDHANI, SH., MH.</td>
+                    <td>198709152006041002</td>
+                    <td>III/B</td>
+                    <td>PANITERA MUDA GUGATAN</td>
+                    <td>
+                        <date datetime="2019-04-18">April 2019</date>
+                    </td>
+                    <td>
+                        <date datetime="2021-04-18">April 2021</date>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>M. AHMAD RAMLI, SH</td>
+                    <td>197705242003121004</td>
+                    <td>III/D</td>
+                    <td>PANITERA MUDA HUKUM</td>
+                    <td>
+                        <date datetime="2019-11-17">Desember 2019</date>
+                    </td>
+                    <td>
+                        <date datetime="2021-11-17">Desember 2021</date>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>H. YAHYADI.SH</td>
+                    <td>197301122003121002</td>
+                    <td>III/D</td>
+                    <td>PANITERA PENGGANTI</td>
+                    <td>
+                        <date datetime="2019-11-17">Desember 2019</date>
+                    </td>
+                    <td>
+                        <date datetime="2021-11-17">Desember 2021</date>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>SYAHKRIANI, SH</td>
+                    <td>197405022000121001</td>
+                    <td>III/C</td>
+                    <td>JURUSITA</td>
+                    <td>
+                        <date datetime="2019-11-17">Desember 2019</date>
+                    </td>
+                    <td>
+                        <date datetime="2021-11-17">Desember 2021</date>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>M. TUSUF, S.KOM</td>
+                    <td>198412042009121005</td>
+                    <td>III/C</td>
+                    <td>KASUBAG PERENCANAAN, IT DAN PELAPORAN</td>
+                    <td>
+                        <date datetime="2019-11-17">Desember 2019</date>
+                    </td>
+                    <td>
+                        <date datetime="2021-11-17">Desember 2021</date>
+                    </td>
+                </tr>
+
+
+
+
+
+            </table>
+            <table class="t20" border='1' cellpadding="0" cellspacing="0" width="80%">
+                <tr>
+                    <td>Masih Kosong??</td>
+                </tr>
+            </table>
+            <table class="t21" border='1' cellpadding="0" cellspacing="0" width="80%">
+                <tr>
+                    <td>Masih Kosong... :></td>
+                </tr>
+            </table>
+
+
+
+
+
+        </div>
+        <!--dalam kotak isi-->
+        <p id="me">V0.0.1</p>
+        <p id="tglskrng">Sekarang</p>
+    </div>
+    <script src="src/script.js" async></script>
+
+
+</body>
+
+
+
+</html>
