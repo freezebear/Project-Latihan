@@ -287,7 +287,7 @@ window.onload = function() {
                 minutes.value = null;
                 day.value = 01;
                 month.value = 'Januari';
-                year.value = 2020;
+                year.value = 2019;
 
             };
 
