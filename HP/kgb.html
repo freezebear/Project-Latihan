@@ -10,34 +10,26 @@
 
 </head>
 
-<body>
+<body>   <div class="bege"></div>
+    
     <div id="jdl">
-        <h1>Electronic Monitoring and Notification Kenaikan Gaji Berkala</h1>
+            <img class="heder" src="src/img/header.png" >
     </div>
-    <!--menu kiri-->
-    <div id="menu_kiri">
-
-        <div class="menukotak">
-            <h2>Home</h2>
-            <div class="link">
-                <a href="Homepage.html">Beranda</a><br>
-                <a href="kgb.html">Monitor</a><br>
-                <a href="#">Coming soon..</a><br>
-                <a href="#">TBA</a><br>
-            </div>
-        </div>
-
-        <div class="menukotak">
-            <h2>User Menu</h2>
-            <div class="link">
-                <a href="#" class="in">Masuk</a><br>
-                <a href="#" class="regs">Daftar</a><br>
-                <a href="#" class="fgt">Lupa Password</a><br>
-            </div>
-        </div>
-
-    </div>
-
+    
+    <span onclick="openNav()" class="navbtn"  >&#9776;</span>
+    <div id="mySidenav" class="sidenav">  
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="homepage.html" onclick="closeNav()">Beranda</a>
+                    <a href="kgb.html">Monitor</a>
+                    <a href="#">Coming soon..</a>
+                    <a href="#">TBA</a>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <a href="login.html">Logout</a>
+                </div>
+    
+    <div id="overlay"></div>
 
 
     <!--tengah-->
@@ -66,11 +58,11 @@
 
 
 
-            <table class="t19" border='1' cellpadding="0" cellspacing="0" width="80%">
+            <table class="t19">
                 <tr>
-                    <th>NO</th>
-                    <th>NAMA</th>
-                    <th>NIP</th>
+                    <th style="width:20px">NO</th>
+                    <th style="width:250px">NAMA</th>
+                    <th style="width:200px">NIP</th>
                     <th>PANGKAT/GOL</th>
                     <th>JABATAN</th>
                     <th>TMT</th>
@@ -225,8 +217,11 @@
 
         </div>
         <!--dalam kotak isi-->
-        <p id="me">V0.0.1</p>
+        <p id="ver">V0.0.2 ©Pengadilan Agama Batulicin 2019 {seluruh halaman masih dalam tahap Alpha dan masih sangat dapat berubah dari tampilan sekarang}</p>
         <p id="tglskrng">Sekarang</p>
+
+       
+                    
     </div>
     <script src="src/script.js" async></script>
 

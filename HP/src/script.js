@@ -1,3 +1,5 @@
+/*
+
 var but1 = document.querySelector('.in');
 var but2 = document.querySelector('.fgt');
 var but3 = document.querySelector('.regs');
@@ -18,7 +20,16 @@ but3.onclick = function() {
     alert('Coming soon..'); //alert = notif
 };
 
+*/
+function openNav(){
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("overlay").style.display = "block";
+}
 
+function closeNav(){
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("overlay").style.display = "none";
+}
 function klik() {
     document.getElementById("listthn").classList.toggle("tampil");
 }

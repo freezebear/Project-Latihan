@@ -4,55 +4,52 @@
 <head>
     <link rel="stylesheet" href="src/style.css">
     <meta charset="UTF-8" lang="id">
-    <title>Homepage - 0.0.1</title>
+    <title>Homepage - 0.0.2</title>
 
 
 
 </head>
 
 <body>
+    <div class="bege"></div>
+    
     <div id="jdl">
-        <h1>Electronic Monitoring and Notification Kenaikan Gaji Berkala</h1>
+            <img class="heder" src="src/img/header.png" >
     </div>
-
-    <div id="menu_kiri">
-
-        <div class="menukotak">
-            <h2>Home</h2>
-            <div class="link">
-                <a href="Homepage.html">Beranda</a><br>
-                <a href="kgb.html">Monitor</a><br>
-                <a href="#">Coming soon..</a><br>
-                <a href="#">TBA</a><br>
-            </div>
-        </div>
-
-        <div class="menukotak">
-            <h2>User Menu</h2>
-            <div class="link">
-                <a href="#" class="in">Masuk</a><br>
-                <a href="#" class="regs">Daftar</a><br>
-                <a href="#" class="fgt">Lupa Password</a><br>
-            </div>
-        </div>
-
-    </div>
+    
+    <span onclick="openNav()" class="navbtn"  >&#9776;</span>
+    <div id="mySidenav" class="sidenav">  
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="javascript:void(0)" onclick="closeNav()">Beranda</a>
+                    <a href="kgb.html">Monitor</a>
+                    <a href="#">Coming soon..</a>
+                    <a href="#">TBA</a>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <a href="login.html">Logout</a>
+                </div>
+    
+    <div id="overlay"></div>
+        
 
 
 
+<!--
 
-    <div class="tengah">
+    <div class="mid">class="tengah"
         <div class="isi">
-            <h1>~Selamat Datang~</h1>
-            <h2>di Electronic Monitoring and Notification Kenaikan Gaji Berkala</h2>
-            <h2>(E-MoN KGB)</h2>
-            </br>
-            <h5>seluruh halaman masih dalam tahap Alpha dan akan disesuaikan dengan web asli jika terpilih :)</h5>
+            
+            
 
         </div>
-        <p id="me">V0.0.1</p>
+
+    -->
+        <p id="ver">V0.0.2 ©Pengadilan Agama Batulicin 2019 {seluruh halaman masih dalam tahap Alpha dan masih sangat dapat berubah dari tampilan sekarang}</p>
         <p id="tglskrng">Sekarang</p>
-    </div>
+
+       
+                    
 
 
 
@@ -60,6 +57,7 @@
 
 
     <script src="src/script.js" async></script>
+
 
 
 </body>
